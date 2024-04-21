@@ -1,8 +1,7 @@
-package co.istad.springsecuritybasic.repository;
+package com.istad.springsecuritybasic.repository;
 
-import co.istad.springsecuritybasic.model.User;
+import com.istad.springsecuritybasic.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 

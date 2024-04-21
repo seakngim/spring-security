@@ -1,14 +1,15 @@
-package co.istad.springsecuritybasic.mapper;
+package com.istad.springsecuritybasic.mapper;
 
 
-import co.istad.springsecuritybasic.model.Role;
-import co.istad.springsecuritybasic.model.User;
-import co.istad.springsecuritybasic.model.dto.UserRequest;
-import co.istad.springsecuritybasic.model.dto.UserResponse;
+import com.istad.springsecuritybasic.model.Role;
+import com.istad.springsecuritybasic.model.User;
+import com.istad.springsecuritybasic.model.dto.UserRequest;
+import com.istad.springsecuritybasic.model.dto.UserResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.Named;
+
 
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -24,7 +25,7 @@ public interface UserMapper {
     })
     User toUser(UserRequest userRequest, Set<Role> roles);
 
-    @Mapping(target = "roles", source = "user.roles",qualifiedByName = "mapRoles")
+    @Mapping(target = "roles", source = "user.roles", qualifiedByName = "mapRoles")
     UserResponse toUserResponse(User user);
 
     @Named("mapRoles")

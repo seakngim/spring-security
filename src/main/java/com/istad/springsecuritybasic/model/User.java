@@ -1,8 +1,7 @@
-package co.istad.springsecuritybasic.model;
+package com.istad.springsecuritybasic.model;
 
 
 import jakarta.persistence.*;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -17,7 +16,7 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id ;
+    private String id;
     @Column(unique = true)
     private String email;
     private String password;
@@ -26,7 +25,6 @@ public class User {
     private boolean isAccountNonLocked;
     private boolean isCredentialsNonExpired;
     private boolean isEnabled;
-
 
     @ManyToMany(fetch = FetchType.EAGER)
     Set<Role> roles;

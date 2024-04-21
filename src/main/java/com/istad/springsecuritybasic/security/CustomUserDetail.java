@@ -1,6 +1,6 @@
-package co.istad.springsecuritybasic.security;
+package com.istad.springsecuritybasic.security;
 
-import co.istad.springsecuritybasic.model.User;
+import com.istad.springsecuritybasic.model.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

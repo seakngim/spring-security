@@ -1,21 +1,19 @@
-package co.istad.springsecuritybasic.service;
+package com.istad.springsecuritybasic.service;
 
-import co.istad.springsecuritybasic.mapper.UserMapper;
-import co.istad.springsecuritybasic.model.Role;
-import co.istad.springsecuritybasic.model.User;
-import co.istad.springsecuritybasic.model.dto.UserRequest;
-import co.istad.springsecuritybasic.model.dto.UserResponse;
-import co.istad.springsecuritybasic.repository.RoleRepository;
-import co.istad.springsecuritybasic.repository.UserRepository;
+import com.istad.springsecuritybasic.mapper.UserMapper;
+import com.istad.springsecuritybasic.model.Role;
+import com.istad.springsecuritybasic.model.User;
+import com.istad.springsecuritybasic.model.dto.UserRequest;
+import com.istad.springsecuritybasic.model.dto.UserResponse;
+import com.istad.springsecuritybasic.repository.RoleRepository;
+import com.istad.springsecuritybasic.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 

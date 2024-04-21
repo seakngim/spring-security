@@ -1,4 +1,4 @@
-package co.istad.springsecuritybasic.model;
+package com.istad.springsecuritybasic.model;
 
 
 import jakarta.persistence.*;

@@ -1,4 +1,4 @@
-package co.istad.springsecuritybasic.model.dto;
+package com.istad.springsecuritybasic.model.dto;
 
 import lombok.Builder;
 

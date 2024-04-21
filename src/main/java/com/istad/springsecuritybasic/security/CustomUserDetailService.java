@@ -1,6 +1,6 @@
-package co.istad.springsecuritybasic.security;
+package com.istad.springsecuritybasic.security;
 
-import co.istad.springsecuritybasic.repository.UserRepository;
+import com.istad.springsecuritybasic.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class CustomUserDetailService implements UserDetailsService {
 
     private final UserRepository userRepository;
+
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
